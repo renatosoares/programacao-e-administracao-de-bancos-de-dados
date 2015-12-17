@@ -1,6 +1,7 @@
 -- 6.	Crie um procedimento armazenado para listar os livros da editora com maior quantidade de títulos editados. 
 -- Apresentar a listagem incluindo a editora, o título do livro e o nome dos autores.
-
+CREATE PROCEDURE uspMaiorQtdLivPub
+AS
 SELECT publishers.pub_name, titles.title, authors.au_lname FROM titleauthor
 INNER JOIN titles
 ON titles.title_id = titleauthor.title_id 
