@@ -11,7 +11,7 @@ USE Pubs;
 GO  
 CREATE VIEW singleauthors
 AS
-SELECT ta.au_id, a.au_fname, t.title_id, t.title, t.ytd_sales
+SELECT ta.au_id, a.au_fname, t.title_id, t.title, a.qty
 FROM titleauthor AS ta
 JOIN authors AS a 
 ON ta.au_id = a.au_id
