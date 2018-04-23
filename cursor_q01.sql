@@ -7,7 +7,6 @@ da quantidade de funcionários que estão locados no departamento
 Apenas os departamentos que tenham funcionários devem ser
 apresentados.
 */
---SET NOCOUNT ON;
 
 DECLARE @name_dep varchar(50);
 DECLARE @qty_emp varchar(5);
